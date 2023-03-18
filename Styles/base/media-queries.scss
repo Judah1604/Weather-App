@@ -1,0 +1,76 @@
+$important: !important;
+
+@media screen and (max-width: 768px) {
+	* {
+		overflow-y: visible;
+	}
+
+	body {
+		padding: 10px;
+	}
+
+	header {
+		grid-template-columns: 3fr 2fr;
+		grid-gap: 10px;
+
+		input {
+			padding: 1.2em 1.5em 1.2em 3em $important;
+		}
+	}
+
+	main {
+
+		.condition {
+			grid-template-columns: 1fr 1fr;
+
+			.others {
+				grid-template-columns: repeat(2, 1fr);
+				grid-gap: 10px;
+			}
+		}
+
+		.other-conditions {
+			grid-template-columns: repeat(3, 0.6fr) 1.2fr;
+			grid-gap: 15px;
+		}
+	}
+}
+
+@media screen and (max-width: 425px) {
+	header {
+		grid-template-columns: unset;
+	}
+
+	main {
+
+		.condition {
+			grid-template-columns: unset;
+			height: unset;
+
+			.others {
+				grid-gap: 20px;
+
+				& > * {
+					padding: 20px;
+				}
+			}
+		}
+
+		.other-conditions {
+			grid-template-columns: unset;
+		}
+	}
+}
+
+@media screen and (max-width: 375px) {
+	main {
+		
+		.others {
+			grid-gap: 15px $important;
+		}
+		
+		.other-conditions {
+			padding-top: 0;
+		}
+	}
+}

@@ -6,6 +6,7 @@ header {
   place-items: center;
   grid-gap: 20px;
   padding: 20px;
+  width: -webkit-fill-available;
   padding-top: 5px; }
   /* line 11, sections.scss */
   header .search {
@@ -55,7 +56,8 @@ header {
 
 /* line 50, sections.scss */
 main .header {
-  padding-left: 2em; }
+  padding-left: 2em;
+width: -webkit-fill-available;}
 /* line 54, sections.scss */
 main .condition {
   display: grid;

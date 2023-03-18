@@ -1,0 +1,55 @@
+@media screen and (max-width: 768px) {
+  /* line 4, media-queries.scss */
+  * {
+    overflow-y: visible; }
+
+  /* line 8, media-queries.scss */
+  body {
+    padding: 10px; }
+
+  /* line 12, media-queries.scss */
+  header {
+    grid-template-columns: 3fr 2fr 2fr;
+    grid-gap: 10px; }
+    /* line 16, media-queries.scss */
+    header input {
+      padding: 1.2em 1.5em 1.2em 3em !important; }
+
+  /* line 23, media-queries.scss */
+  main .condition {
+    grid-template-columns: 1fr 1fr; }
+    /* line 26, media-queries.scss */
+    main .condition .others {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px; }
+  /* line 32, media-queries.scss */
+  main .other-conditions {
+    grid-template-columns: repeat(3, 0.6fr) 1.2fr;
+    grid-gap: 15px; } }
+@media screen and (max-width: 425px) {
+  /* line 40, media-queries.scss */
+  header {
+    grid-template-columns: unset; }
+
+  /* line 46, media-queries.scss */
+  main .condition {
+    grid-template-columns: unset;
+    height: unset; }
+    /* line 50, media-queries.scss */
+    main .condition .others {
+      grid-gap: 20px; }
+      /* line 53, media-queries.scss */
+      main .condition .others > * {
+        padding: 20px; }
+  /* line 59, media-queries.scss */
+  main .other-conditions {
+    grid-template-columns: unset; } }
+@media screen and (max-width: 375px) {
+  /* line 68, media-queries.scss */
+  main .others {
+    grid-gap: 15px !important; }
+  /* line 72, media-queries.scss */
+  main .other-conditions {
+    padding-top: 0; } }
+
+/*# sourceMappingURL=media-queries.css.map */

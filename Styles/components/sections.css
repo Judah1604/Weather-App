@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Noto+Sans:wght@600&display=swap");
+/* line 3, sections.scss */
+header {
+  display: grid;
+  grid-template-columns: 6fr 2fr;
+  place-items: center;
+  grid-gap: 20px;
+  padding: 20px;
+  padding-top: 5px; }
+  /* line 11, sections.scss */
+  header .search {
+    position: relative;
+    width: 100%;
+    height: 60px; }
+    /* line 16, sections.scss */
+    header .search input {
+      width: -webkit-fill-available;
+      font-family: inherit;
+      color: inherit;
+      background-color: rgba(0, 0, 0, 0.8);
+      outline: none;
+      border: none;
+      font-size: 1.0em;
+      padding: 1.2em 1.5em 1.2em 4.5em;
+      border-radius: 50px;
+      outline: 1px solid #101010; }
+    /* line 29, sections.scss */
+    header .search i {
+      position: absolute;
+      left: 5%;
+      top: 35%;
+      cursor: pointer; }
+  /* line 37, sections.scss */
+  header .location,
+  header .time {
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 10px; }
+    /* line 42, sections.scss */
+    header .location i,
+    header .time i {
+      color: #8d8d8d; }
+
+/* line 50, sections.scss */
+main .header {
+  padding-left: 2em; }
+/* line 54, sections.scss */
+main .condition {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  grid-gap: 20px;
+  height: 200px;
+  padding: 20px; }
+  /* line 61, sections.scss */
+  main .condition .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+    padding: 20px; }
+    /* line 66, sections.scss */
+    main .condition .main .forecast {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      gap: 15px; }
+    /* line 70, sections.scss */
+    main .condition .main .text {
+      padding-left: 2em;
+      text-transform: capitalize; }
+    /* line 75, sections.scss */
+    main .condition .main .city {
+      height: 50%;
+      font-size: 1.1em; }
+  /* line 81, sections.scss */
+  main .condition .others {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px; }
+  /* line 87, sections.scss */
+  main .condition h1 {
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    /* line 92, sections.scss */
+    main .condition h1 span {
+      font-size: 1.5em; }
+  /* line 97, sections.scss */
+  main .condition .other {
+    border-radius: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 25px; }
+    /* line 101, sections.scss */
+    main .condition .other i {
+      font-size: 2.2em;
+      color: #0065a7; }
+  /* line 107, sections.scss */
+  main .condition .description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px; }
+/* line 112, sections.scss */
+main .other-conditions {
+  padding: 20px;
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 1.3fr;
+  grid-gap: 20px; }
+  /* line 119, sections.scss */
+  main .other-conditions .panel {
+    border-radius: 15px;
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 15px; }
+    /* line 124, sections.scss */
+    main .other-conditions .panel h2 {
+      font-size: 1.5em;
+      letter-spacing: 1px; }
+  /* line 130, sections.scss */
+  main .other-conditions .lon-lat {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 70px; }
+    /* line 133, sections.scss */
+    main .other-conditions .lon-lat .lon,
+    main .other-conditions .lon-lat .lat {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: start;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: start;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      gap: 20px; }
+
+/* line 141, sections.scss */
+.panel {
+  width: -webkit-fill-available;
+  border-radius: 50px;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  outline: 1px solid #101010; }
+
+/*# sourceMappingURL=sections.css.map */

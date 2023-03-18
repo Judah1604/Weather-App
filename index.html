@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Weather App</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="Styles/base/common.css">
+	<link rel="stylesheet" href="Styles/components/sections.css">
+	<link rel="stylesheet" href="Styles/base/media-queries.css">
+	<script src="https://kit.fontawesome.com/08c9114e01.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="bg"></div>
+	<header>
+		<div class="search">
+			<input type="text" class="searchBar" placeholder="Search for cities, places ...">
+			<i class="fa-solid fa-magnifying-glass searchIcon"></i>
+		</div>
+		<div class="time panel">
+			<i class="fa-regular fa-clock"></i>
+			<span>2023-03-18 1:54</span>
+		</div>
+	</header>
+	<main>
+		<p class="header">Today's Overview</p>
+		<div class="condition">
+			<div class="main panel">
+				<div class="forecast">
+					<img src='Images/cloudy.png' alt="Icon" class="icon">
+					<div class="description">
+						<h1 class="temp"><span>51</span>°C</h1>
+						<div class="city">
+							Tokyo
+						</div>
+					</div>
+				</div>
+				<div class="text">Overcast</div>
+			</div>
+			<div class="others">
+				<div class="humidity panel other">
+					<p>Humidity: </p>
+					<h2>70%</h2>
+				</div>
+				<div class="windSpd panel other">
+					<p>Wind Speed: </p>
+					<h2>15.1km/h</h2>
+				</div>
+				<div class="feels panel other">
+					<p>Feels Like: </p>
+					<h2>11.1°C</h2>
+				</div>
+				<div class="pressure panel other">
+					<p>Pressure: </p>
+					<h2>1003mb</h2>
+				</div>
+			</div>
+		</div>
+		<div class="other-conditions">
+			<div class="wind-dir panel">
+				<p>Wind Direction</p>
+				<h2>10deg</h2>
+			</div>
+			<div class="cloud panel">
+				<p>Clouds</p>
+				<h2>75</h2>
+			</div>
+			<div class="gust panel">
+				<p>Wind gust</p>
+				<h2>3.25m/s</h2>
+			</div>
+			<div class="lon-lat panel">
+				<div class="lon">
+					<p>Longitude</p>
+					<h2>51.52</h2>
+				</div>
+				<div class="lat">
+					<p>Latitude</p>
+					<h2>-0.11</h2>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+<script src="main.js"></script>
+
+</html>

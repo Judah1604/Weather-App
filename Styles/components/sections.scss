@@ -7,6 +7,7 @@ header {
 	grid-gap: 20px;
 	padding: 20px;
 	padding-top: 5px;
+	width: -webkit-fill-available;
 
 	.search {
 		position: relative;
@@ -46,6 +47,7 @@ header {
 }
 
 main {
+	width: -webkit-fill-available;
 
 	.header {
 		padding-left: 2em;
